@@ -1,0 +1,42 @@
+{
+  "name": "node-stripe",
+  "version": "1.0.7",
+  "description": "API service to stripe in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "ilankumaran",
+    "email": "ilankumaran786@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.79.0"
+  },
+  "_id": "node-stripe@1.0.7",
+  "_shasum": "2706bf9411888e9d14d9bf18e8b733178b4315df",
+  "_from": "node-stripe@latest",
+  "_npmVersion": "2.15.1",
+  "_nodeVersion": "4.4.3",
+  "_npmUser": {
+    "name": "ilankumaran",
+    "email": "ilankumaran786@gmail.com"
+  },
+  "dist": {
+    "shasum": "2706bf9411888e9d14d9bf18e8b733178b4315df",
+    "tarball": "https://registry.npmjs.org/node-stripe/-/node-stripe-1.0.7.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "ilankumaran",
+      "email": "ilankumaran786@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/node-stripe-1.0.7.tgz_1481374908882_0.49719993583858013"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/node-stripe/-/node-stripe-1.0.7.tgz"
+}
