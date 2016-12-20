@@ -46,7 +46,7 @@ To begin any stripe transactions or services using this module, We need to init
 
 ```javascript
 var stripe=require('../module/experiement');
-    stripe.init({key:'sk_test_2kSmiYiONir5vpPRvby1RoJg'},function(err,result){
+    stripe.init({key:secret key},function(err,result){
         if(err)
         {
             console.log(err);
