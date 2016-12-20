@@ -18,25 +18,24 @@ exports.init=function(obj,cb)
 
 exports.charges=function(obj,func,cb)
 {
-    console.log(obj);
-    console.log(key);
+    
 
     return {
         create:function(cb)
         {
             var temppath=path+'charges';
-            console.log(temppath);
+            
             request(temppath,{auth:{username:key},form:obj,method:'POST'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
-                    console.log(err);
+                    
+                    
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
-                    console.log(body);
+                    
+                    
                     cb(null,body);
                 }
             });
@@ -44,18 +43,17 @@ exports.charges=function(obj,func,cb)
         retrieve:function(cb)
         {
             var temppath=path+'charges/'+obj;
-            console.log(temppath);
+            
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
-                    console.log(err);
+                    
+                    
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
-                    console.log(body);
+                    
                     cb(null,body);
                 }
             });
@@ -76,13 +74,12 @@ if(typeof(obj)=='undefined')
             request(temppath,{auth:{username:key},form:obj,method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
-                    console.log(err);
+                    
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -95,13 +92,13 @@ if(typeof(obj)=='undefined')
             request(temppath,{auth:{username:key},form:obj,method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -115,13 +112,13 @@ if(typeof(obj)=='undefined')
             request(temppath,{auth:{username:key},form:obj,method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -140,13 +137,13 @@ exports.token=function(obj)
             request(temppath,{auth:{username:key},form:obj,method:'POST'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -159,13 +156,13 @@ exports.token=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -184,13 +181,13 @@ exports.customers=function(obj)
             request(temppath,{auth:{username:key},form:obj,method:'POST'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -203,13 +200,13 @@ exports.customers=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -222,13 +219,13 @@ exports.customers=function(obj)
             request(temppath,{auth:{username:key},form:data,method:'POST'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -241,14 +238,14 @@ exports.customers=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'delete'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
-                    console.log(body);
+                    
+                   console.log(body);
                     cb(null,body);
                 }
             });
@@ -260,13 +257,13 @@ exports.customers=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                   
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                   
                     console.log(body);
                     cb(null,body);
                 }
@@ -279,13 +276,13 @@ exports.customers=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -303,13 +300,13 @@ exports.card=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -327,13 +324,13 @@ exports.events=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -346,13 +343,13 @@ exports.events=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
@@ -371,13 +368,13 @@ exports.account=function(obj)
             request(temppath,{auth:{username:key},form:'',method:'GET'},function(err,resp,body){
                 if(err)
                 {
-                    console.log('yes error');
+                    
                     console.log(err);
                     cb(err,'error');
                 }
                 else
                 {
-                    console.log('got it');
+                    
                     console.log(body);
                     cb(null,body);
                 }
